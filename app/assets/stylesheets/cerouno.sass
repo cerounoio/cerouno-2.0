@@ -19,44 +19,72 @@ $color-success: #0CA221
 $color-warning: #F86138
 $color-info: #2583A2
 
-body
-  font-family: $font-medium
-  font-size: 18px
+@include media-breakpoint-down(xs)
+  h1
+    font-size: 2.5em
+    line-height: 1em
+    font-family: $font-black
+    letter-spacing: -0.025em
 
-h1
-  font-size: 5em
-  line-height: 1em
-  font-family: $font-black
-  letter-spacing: -0.025em
+  h2
+    font-size: 2em
+    line-height: 1em
+    font-family: $font-bold
+    letter-spacing: -0.025em
 
-h2
-  font-size: 3em
-  line-height: 1em
-  font-family: $font-bold
-  letter-spacing: -0.025em
+  h3
+    font-size: 1.5em
+    line-height: 1.25em
+    font-family: $font-bold
+    letter-spacing: -0.025em
 
-h3
-  font-size: 1.75em
-  line-height: 1.25em
-  font-family: $font-bold
-  letter-spacing: -0.025em
+  p
+    font-size: 1em
+    line-height: 1.25em
+    font-family: $font-light
 
-h4
-  font-size: 1.125em
-  line-height: 1.222222em
-  font-family: $font-bold
-  letter-spacing: -0.025em
+  .hide-xs
+    display: none
 
-h5
-  font-size: 1em
-  line-height: 1.375em
-  font-family: $font-bold
-  letter-spacing: -0.025em
+@include media-breakpoint-up(sm)
+  body
+    font-family: $font-medium
+    font-size: 18px
 
-p
-  font-size: 1em
-  line-height: 1.375em
-  font-family: $font-light
+  h1
+    font-size: 5em
+    line-height: 1em
+    font-family: $font-black
+    letter-spacing: -0.025em
+
+  h2
+    font-size: 3em
+    line-height: 1em
+    font-family: $font-bold
+    letter-spacing: -0.025em
+
+  h3
+    font-size: 1.75em
+    line-height: 1.25em
+    font-family: $font-bold
+    letter-spacing: -0.025em
+
+  h4
+    font-size: 1.125em
+    line-height: 1.222222em
+    font-family: $font-bold
+    letter-spacing: -0.025em
+
+  h5
+    font-size: 1em
+    line-height: 1.375em
+    font-family: $font-bold
+    letter-spacing: -0.025em
+
+  p
+    font-size: 1em
+    line-height: 1.375em
+    font-family: $font-light
 
 b
   font-family: $font-bold
