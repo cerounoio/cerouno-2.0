@@ -5,7 +5,7 @@
   margin-left: 0
   margin-right: 0
 
-@include media-breakpoint-down(xs)
+@include media-breakpoint-down(xl)
   .leader
     background-color: black
 
@@ -83,7 +83,7 @@
     color: #5F5F5F
     padding: 50px 10% 30px 10%
 
-@include media-breakpoint-up(sm)
+@include media-breakpoint-up(xl)
   .leader
     background-color: black
 
@@ -95,9 +95,14 @@
       margin-bottom: 50px
       font-family: $font-light
 
+    br
+      display: block
+
     .btn
       font-size: 2em
       padding: 10px 20px
+      min-width: inherit
+
     .col
       padding: 125px 10%
       width: 100%
@@ -133,8 +138,14 @@
     h3
       margin-bottom: 20px
 
+    h2
+      margin-top: 0px
+
     h5
       margin-bottom: 0px
+
+    .btn
+      min-width: inherit
 
     .top
       margin-bottom: 100px
