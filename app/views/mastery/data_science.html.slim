@@ -1,0 +1,154 @@
+.leader
+  .row
+    .col
+      = link_to root_path do
+        = image_tag 'cerouno-logo-horizontal.png', width: "200", alt: "CeroUno Logo"
+      h4
+        span.mastery Mastery Program
+      h1 Data Science
+      h3.description Aprende a modelar y estructurar datos,<br>desarrollar modelos estadísticos, utilizar<br>machine learning y crear visualizaciones<br>para guiar a las organizaciones al futuro.
+      = link_to 'APLICA AHORA', 'https://cerouno.typeform.com/to/OhB7O5', class: 'btn btn-lg btn-primary'
+
+.difference
+  .row
+    .col-md-8
+      h2 El futuro de la educación.<br>Ahora.
+    .col-md-4
+      p Los programas de <b>CeroUno</b> están diseñados alrededor de tu éxito. Una carrera como científico de datos te permite duplicar tus ingresos. ¿Lo mejor de todo? Tenemos relación con más de 50 empresas que están buscando profesionistas como tú.
+  hr
+  .row
+    .col-md-4.center
+      i.far.fa-user-headset.fa-3x
+      h3.bold Clases en Vivo
+      p Olvídate de las clases obsoletas. Los programas de <b>CeroUno</b> son impartidos en línea por instructores en vivo. Además, puedes recibir mentoría directa de CTOs y Senior Developers con años de experiencia en la industria.
+    .col-md-4.center
+      i.far.fa-briefcase.fa-3x
+      h3.bold Asistencia Laboral
+      p Tu éxito profesional es lo más importante. Si buscas empleo, nosotros tenemos a un equipo dedicado a conseguirte oportunidades de empleo de calidad, pasar tus entrevistas técnicas y negociar tu primer sueldo en la industria de tecnología.
+    .col-md-4.center
+      i.far.fa-hand-holding-usd.fa-3x
+      h3.bold Sin Deuda
+      p Empieza tu carrera como científico de datos sin deuda y sin intereses. Con nuestros <b>Acuerdos de Ingreso Compartido</b> paga sólo 999 pesos al mes hasta que tengas un trabajo y percibas más de 16 mil pesos netos al mes.
+.photo
+  .row.no-gutters
+    .col-md-8
+      = image_tag 'students-1.jpg', width: "100%", alt: "Student looking upwards"
+    .col-md-4.no-gutters
+      .col-md-12
+        = image_tag 'students-2.jpg', width: "100%", alt: "Founder addressing class"
+      .col-md-12
+        = image_tag 'students-3.jpg', width: "100%", alt: "Students sitting and paying attention"
+= render 'layouts/testimony', quote: @quote
+.programs
+  .row.top
+    .col-md-4
+      h2 Programa
+    .col-md-8
+      p El <b>Mastery Program</b> de <b>Data Science</b> está dirigido a desarrolladores de software o a profesionistas con experiencia en estadística que busquen crear modelos estadísticos predictivos, consumir datos de manera programática y preparar visualizaciones. Los egresados de este programa podrán estructurar y desarrollar proyectos de análisis de datos que faciliten la toma de decisiones dentro de una organización.
+  .row
+    .col-md-2.center.offset-md-4
+      h3.highlight M1
+    .col-md-6.center
+      h5.lighter Ciencia de Datos en la Industria I
+      h3.highlight Planteamiento de Proyectos<br>de Ciencia de Datos
+      p Aprende las diferentes disciplinas dentro de la Ciencia de Datos y cómo estructurar, desarrollar e implementar proyectos de análisis de datos dentro de una organización.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M2
+    .col-md-6.center
+      h5.lighter Python para la Ciencia de Datos I
+      h3.highlight Fundamentos de Programación<br>en Python
+      p Aprende a utilizar la sintaxis básica de Python, como variables, operaciones matemáticas, cadenas de caracteres, manipulación de texto y colecciones.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M3
+    .col-md-6.center
+      h5.lighter Python para la Ciencia de Datos II
+      h3.highlight Programación Estructurada
+      p Aprende a resolver problemas de programación utilizando condicionales lógicos, control de flujo y manejo de ciclos.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M4
+    .col-md-6.center
+      h5.lighter Python para la Ciencia de Datos III
+      h3.highlight Python Científico
+      p Aprende a usar las herramientas profesionales que utilizan los científicos de datos en la industria, como Anaconda, NumPy, Matplotlib y SciPy.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M5
+    .col-md-6.center
+      h5.lighter Python para la Ciencia de Datos IV
+      h3.highlight Modelación de Datos
+      p Aprende a diseñar y definir modelos de datos, y a manejar su almacenamiento, procesamiento y limpieza para analizarlos programáticamente.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M6
+    .col-md-6.center
+      h5.lighter Ciencia de Datos en la Industria II
+      h3.highlight Visualización y Comunicación<br>de Datos
+      p Aprende sobre como los principios fundamentales para establecer visualizaciónes efectivas, cómo utilizar herramientas de visualización y cómo diseñar dashboards que faciliten la comprensión y manejo de los datos.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M7
+    .col-md-6.center
+      h5.lighter Análisis Estadístico I
+      h3.highlight Estadística Descriptiva
+      p Aprende sobre las herramientas estadísticas que se utilizan para describir una población como media, mediana, moda, varianza, covarianza, rangos, estandarización y distribución.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M8
+    .col-md-6.center
+      h5.lighter Análisis Estadístico II
+      h3.highlight Estadística Inferencial
+      p Aprende a como utilizar la estadística para crear modelos predictivos usando regresiones simple, regresiones múltiples, comparación de poblaciones y planteamineto de hipótesis.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M9
+    .col-md-6.center
+      h5.lighter Aprendizaje Automático I
+      h3.highlight Aprendizaje Supervisada
+      p Aprende a implementar algoritmos de regresión, algoritmos de clasificación, sets de entrenamiento y de prueba, y estandarización de datos para crear modelos predictivos.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M10
+    .col-md-6.center
+      h5.lighter Aprendizaje Automático II
+      h3.highlight Aprendizaje No Supervisado
+      p Aprende a utilizar técnicas de aprendizaje de máquina como clustering, reducción de dimensionalidad y preprocesamiento adicional para encontrar patrones en sets de datos.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M11
+    .col-md-6.center
+      h5.lighter Aprendizaje Automático III
+      h3.highlight Redes Neurales
+      p Aprende sobre como utilizar Deep Learning a través de perceptrones, redes neurales de múltiples capas y redes convulsionales.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M12
+    .col-md-6.center
+      h5.lighter Ciencia de Datos en la Industria III
+      h3.highlight Elaboración de Proyectos<br>en Ciencia de Datos
+      p Aprende a elaborar de propuestas y proyectos de ciencia de datos para ayudar a las organizaciones a entender sus datos y generar perspectivas que las guíen hacia el futuro.
+
+= render 'layouts/companies'
+.financing
+  .row
+    .col-md-8
+      h2 Financiamiento
+    .col-md-4
+      p  La falta de recursos económicos no será un impedimento para cambiar tu vida. Tenemos tres maneras de financiar el inicio de tu carrera como científico de datos: <b>Acuerdo de Ingreso Compartido</b>, <b>Meses sin Intereses</b> o <b>Pago de Contado</b>.
+  .hr
+  .row
+    .col-md-4.center
+      i.far.fa-handshake-alt.fa-3x
+      h3.bold Ingreso Compartido
+      p Paga sólo 999 pesos al mes hasta que tengas un trabajo con un sueldo 16 mil pesos neto mensual. Después de eso, paga 15 por ciento de tu sueldo neto por 18 meses. Así nosotros compartimos el riesgo contigo.
+    .col-md-4.center
+      i.far.fa-credit-card.fa-3x
+      h3.bold Meses sin Intereses
+      p Si buscas una opción de financiamiento tradicional, puedes cubrir el monto de tu colegiatura en hasta 18 mensualidades sin intereses de 2 mil 499 pesos al mes mediante debitación automática.
+    .col-md-4.center
+      i.far.fa-money-check-edit-alt.fa-3x
+      h3.bold Pago de Contado
+      p El monto completo de la colegiatura del programa es de 44 mil 990 pesos, pero si pagas de contado, recibe un descuento de 5 mil pesos sobre el monto total de la colegiatura y paga sólo 39 mil 990 pesos.
+= render 'layouts/instructors'

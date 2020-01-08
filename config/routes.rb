@@ -4,5 +4,14 @@ Rails.application.routes.draw do
   get 'privacy',  to: 'home#privacy'
   get 'bootcamp', to: 'home#bootcamp'
 
+  namespace :mastery do
+    get 'data-science'
+    get 'devops'
+    get 'cybersecurity'
+    get 'microservices'
+    get 'digital-leadership'
+    get 'scrum'
+  end
+
   root 'home#show'
 end

@@ -23,5 +23,9 @@
 /public/assets
 .byebug_history
 
+# Ignore certs
+www_cerouno_io.key
+www_cerouno_io.pem
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key

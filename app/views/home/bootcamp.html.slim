@@ -1,7 +1,8 @@
 .leader
   .row
     .col
-      = image_tag 'cerouno-logo-horizontal.png', width: "200", alt: "CeroUno Logo"
+      = link_to root_path do
+        = image_tag 'cerouno-logo-horizontal.png', width: "200", alt: "CeroUno Logo"
       h1 Descubre tu<br> Potencial
       h3 Aprende a programar en 24 semanas y<br> <b>te conseguimos empleo</b>. Clases en línea<br> con instructores, en vivo, y mentoría<br> con los mejores expertos de la industria.
       = link_to 'APLICA AHORA', 'https://cerouno.typeform.com/to/Ro3MyJ', class: 'btn btn-lg btn-primary'
@@ -35,15 +36,7 @@
         = image_tag 'students-2.jpg', width: "100%", alt: "Founder addressing class"
       .col-md-12
         = image_tag 'students-3.jpg', width: "100%", alt: "Students sitting and paying attention"
-.testimony
-  .row
-    .col-md-12.center
-      i.fas.fa-quote-left.quote
-      h3 Creemos en un futuro donde la educación de calidad no sea un privilegio: donde lo única diferencia entre personas no sea su nivel socioeconómico sino su talento y su pasión para cambiar el mundo.
-      i.fas.fa-quote-right.quote
-      h5.name Jorge Téllez
-      h5.title Director General
-      h5.company CeroUno
+= render 'layouts/testimony', quote: @quote
 .programs
   .row.top
     .col-md-4
@@ -82,51 +75,7 @@
       h5.lighter Módulo 4
       h3.highlight Pensamiento Algorítmico
       p Aprende a pensar como un ingeniero de software. Durante este módulo resolveremos problemas de computación como algorítmos de ordenamiento, implementaciones de listas vinculadas o un árbol de búsqueda binaria.
-.companies
-  .row.top
-    .col-md-4
-      h2 Empresas
-    .col-md-8
-      p Los cientos de graduados de nuestros programas trabajan en más de <b>50 empresas</b> en los sectores financiero, telecomunicaciones, manufactura, construcción, minería, consultoría, seguridad, gobierno y logística, entre otros.
-  .row.align-items-center.logos
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-accenture.png', width: "80%", alt: "Accenture Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-neoris.png', width: "80%", alt: "Neoris Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-epicor.png', width: "80%", alt: "Epicor Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-caterpillar.png', width: "80%", alt: "Caterpillar Logo"
-  .row.align-items-center.logos
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-banregio.png', width: "80%", alt: "Banregio Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-autlan.png', width: "80%", alt: "Autlan Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-honeywell.png', width: "80%", alt: "Honeywell Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-vidusa.png', width: "80%", alt: "Vidusa Logo"
-  .row.align-items-center.logos
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-civicadigital.png', width: "80%", alt: "Cívica Digital Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-beone.png', width: "80%", alt: "BeOne Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-reservamos.png', width: "80%", alt: "Reservamos Logo"
-    .col-md-3
-      .company-logo
-        = image_tag 'companies/logo-psw-global.png', width: "80%", alt: "PSW Global Logo"
+= render 'layouts/companies'
 .financing
   .row
     .col-md-8
@@ -147,84 +96,4 @@
       i.far.fa-money-check-edit-alt.fa-3x
       h3.bold Pago de Contado
       p El monto completo de la colegiatura del programa es de 69 mil 990 pesos, pero si pagas de contado, recibe un descuento de 5 mil pesos sobre el monto total de la colegiatura y paga sólo 64 mil 990 pesos.
-.instructors
-  .row.top
-    .col-md-4
-      h2 Instructores
-    .col-md-8
-      p Los instructores de <b>CeroUno</b> han sido seleccionados no sólo por su expertise técnico, sino también por su compromiso con la educación. Además, durante el programa podrás recibir mentoría de senior developers y CTOs de empresas de tecnología, lo que te dará una perspectiva real de la industria.
-.instructors-photos
-  .row.no-gutters
-    .col-md-2
-      = image_tag 'instructors/rafa-cardenas.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Rafa Cárdenas
-          h5.company Narrative Studio
-    .col-md-2
-      = image_tag 'instructors/adrian-cuadros.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Adrián Cuadros
-          h5.company Reservamos.mx
-    .col-md-2
-      = image_tag 'instructors/tony-ortiz.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Tony Ortiz
-          h5.company Lagersoft
-    .col-md-2
-      = image_tag 'instructors/mike-salazar.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Mike Salazar
-          h5.company Devian Labs
-    .col-md-2
-      = image_tag 'instructors/israel-zuniga.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Israel Zúñiga
-          h5.company Evolve
-    .col-md-2
-      = image_tag 'instructors/fer-flores.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Fer Flores
-          h5.company Lagersoft
-  .row.no-gutters
-    .col-md-2
-      = image_tag 'instructors/elias-matheus.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Elías Matheus
-          h5.company Reservamos.mx
-    .col-md-2
-      = image_tag 'instructors/ceci-torres.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Ceci Torres
-          h5.company Lagersoft
-    .col-md-2
-      = image_tag 'instructors/benito-serna.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Benito Serna
-          h5.company Briq.mx
-    .col-md-2
-      = image_tag 'instructors/alex-cavazos.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Alex Cavazos
-          h5.company Truelogic Software
-    .col-md-2
-      = image_tag 'instructors/alan-zambrano.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Alan Zambrano
-          h5.company Lagersoft
-    .col-md-2
-      = image_tag 'instructors/vov-quintanilla.jpg', width: "100%", alt: "CeroUno Logo"
-      .instructor-photo
-        .instructor-info
-          h5.name Vov Quintanilla
-          h5.company IcaliaLabs
+= render 'layouts/instructors'
