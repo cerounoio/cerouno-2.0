@@ -9,9 +9,21 @@ class MasteryController < ApplicationController
   end
 
   def devops
+    @quote = Quote.new(
+      text:    'El <b>Mastery Program</b> de <b>Cybersecurity</b> me permitió reforzar y comprender las diferentes soluciones de seguridad y detectar las principales amenazas informáticas y vulnerabilidades de infraestructura. Recomiendo ampliamente el programa ya que cuentan con instructores muy capacitados y conocen a la perfección las diferentes amenazas actuales.',
+      name:    'Jorge Martínez',
+      title:   'Jefe de Soporte y Comunicación',
+      company: 'Autlán'
+    )
   end
 
   def cybersecurity
+    @quote = Quote.new(
+      text:    'El <b>Mastery Program</b> de <b>Cybersecurity</b> me facilitó el aprendizaje de herramientas que nos ha permitido elevar la calidad y la eficiencia del despliegue productivo de las aplicaciones que desarrollamos en la organización. Recomiendo ampliamente el programa.',
+      name:    'Rafael Quintero',
+      title:   'Líder de Equipo de DevOps',
+      company: 'Helicon'
+    )
   end
 
   def microservices
