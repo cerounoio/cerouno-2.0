@@ -1,0 +1,106 @@
+.leader
+  .row
+    .col
+      = link_to root_path do
+        = image_tag 'cerouno-logo-horizontal.png', width: "200", alt: "CeroUno Logo"
+      h4
+        span.mastery Mastery Program
+      h1 DevOps
+      h3.description Aprende a reducir los tiempos de despliegue,<br> versionar y contenerizar aplicaciones,<br> y orquestar y monitorear microservicios<br> para manejar infraestructura programáticamente.
+      = link_to 'APLICA AHORA', 'https://cerouno.typeform.com/to/OhB7O5', class: 'btn btn-lg btn-primary'
+= render 'difference'
+= render 'photo'
+= render 'layouts/testimony', quote: @quote
+.programs
+  .row.top
+    .col-md-4
+      h2 Programa
+    .col-md-8
+      p El <b>Mastery Program</b> de <b>DevOps</b> está dirigido a sysadmins y desarrolladores de software que quieran aprender a manejar infraestructura programáticamente, reducir los tiempos de despliegue de aplicaciones y facilitar el mantenimiento y monitoreo de infraestructura.
+  .row
+    .col-md-2.center.offset-md-4
+      h3.highlight M1
+    .col-md-6.center
+      h5.lighter Automatización de Despliegues I
+      h3.highlight Fundamentos de Linux
+      p Aprende sobre el sistema de archivos, manejo de dependencias, administración de redes y puertos, usuarios, roles y permisos, SSH y Vagrant.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M2
+    .col-md-6.center
+      h5.lighter Automatización de Despliegues II
+      h3.highlight Scripting
+      p Aprende a crear scripts usando Bash utilizando variables, control de flujos, lectura y escritura y procesos.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M3
+    .col-md-6.center
+      h5.lighter Automatización de Despliegues III
+      h3.highlight Control de Versiones e<br>Integración Continua
+      p Aprende a utilizar control de versiones, repositorios, commits y branches, así cómo administrar tu pipeline de despliegue con Jenkins.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M4
+    .col-md-6.center
+      h5.lighter Contenerización I
+      h3.highlight Fundamentos de Docker
+      p Aprende a contenerizar tus aplicaciones con Docker utilizando imágenes de desarrollo, proyectos de desarrollo e imágenes desplegables.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M5
+    .col-md-6.center
+      h5.lighter Contenerización II
+      h3.highlight Docker Profesional
+      p Aprende a utilizar docker swarm, docker networking, self-hosted docker registry, securing container workloads, load balancing y scaling.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M6
+    .col-md-6.center
+      h5.lighter Orquestación I
+      h3.highlight Fundamentos de Kubernetes
+      p Aprende a implementar Kubernetes en tus proyectos utilizando Pods, Deployment, Replica Set, Jobs, Stateful Sets y DataPersistence.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M7
+    .col-md-6.center
+      h5.lighter Orquestación II
+      h3.highlight Kubernetes Avanzado
+      p Aprende sobre cómo utilizar patrones de despliegue de aplicaciones contenerizadas, a desplegar un microservicio y a configurar Ingress + Cert Manager.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M8
+    .col-md-6.center
+      h5.lighter Monitoreo I
+      h3.highlight Prometheus
+      p Aprende a integrar Prometheus para el monitoreo de tus aplicaciones a través del monitoreo de logs, implementación de nodos, configuración de alertas, ejecución de queries y visualizando patrones con Grafana.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M9
+    .col-md-6.center
+      h5.lighter Monitoreo II
+      h3.highlight Monitoreo en Kubernetes
+      p Aprende a instalar Prometheus y Graphana en Kubernetes clúster, crear paneles con métricas personalizadas, configurar alertas con alert manager y a detectar anomalías en sets de datos de series de tiempo.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M10
+    .col-md-6.center
+      h5.lighter Infraestructura I
+      h3.highlight Infrastructure as a Code
+      p Aprende a instalarar Terraform, y a administrar despliegues a través interpolación y atributos, módulos y workspaces, y manejo de estado remoto.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M11
+    .col-md-6.center
+      h5.lighter Infraestructura II
+      h3.highlight Kubernetes Package Manager
+      p Aprende como utilizar Helm usando Helm Charts, releases y Helm plugins.
+  .row.second
+    .col-md-2.center.offset-md-4
+      h3.highlight M12
+    .col-md-6.center
+      h5.lighter Infraestructura III
+      h3.highlight Seguridad
+      p Aprende a detectar vulnerabilidades, a implementar estrategias de prevención, y a responder a incidentes.
+= render 'layouts/companies'
+= render 'financing'
+= render 'layouts/instructors'

@@ -8,36 +8,8 @@
       h1 Cybersecurity
       h3.description Aprende a evaluar vulnerabilidades,<br> hackeo ético, ingeniería social, seguridad en la nube<br> y gestión de políticas de ciberseguridad<br> para proteger a las organizaciones de ciberataques.
       = link_to 'APLICA AHORA', 'https://cerouno.typeform.com/to/OhB7O5', class: 'btn btn-lg btn-primary'
-
-.difference
-  .row
-    .col-md-8
-      h2 El futuro de la educación.<br> Ahora.
-    .col-md-4
-      p Los programas de <b>CeroUno</b> están diseñados alrededor de tu éxito. Una carrera como científico de datos te permite duplicar tus ingresos. ¿Lo mejor de todo? Tenemos relación con más de 50 empresas que están buscando profesionistas como tú.
-  hr
-  .row
-    .col-md-4.center
-      i.far.fa-user-headset.fa-3x
-      h3.bold Clases en Vivo
-      p Olvídate de las clases obsoletas. Los programas de <b>CeroUno</b> son impartidos en línea por instructores en vivo. Además, puedes recibir mentoría directa de CTOs y Senior Developers con años de experiencia en la industria.
-    .col-md-4.center
-      i.far.fa-briefcase.fa-3x
-      h3.bold Asistencia Laboral
-      p Tu éxito profesional es lo más importante. Si buscas empleo, nosotros tenemos a un equipo dedicado a conseguirte oportunidades de empleo de calidad, pasar tus entrevistas técnicas y negociar tu primer sueldo en la industria de tecnología.
-    .col-md-4.center
-      i.far.fa-hand-holding-usd.fa-3x
-      h3.bold Sin Deuda
-      p Empieza tu carrera como científico de datos sin deuda y sin intereses. Con nuestros <b>Acuerdos de Ingreso Compartido</b> paga sólo 999 pesos al mes hasta que tengas un trabajo y percibas más de 16 mil pesos netos al mes.
-.photo
-  .row.no-gutters
-    .col-md-8
-      = image_tag 'students-1.jpg', width: "100%", alt: "Student looking upwards"
-    .col-md-4.no-gutters
-      .col-md-12
-        = image_tag 'students-2.jpg', width: "100%", alt: "Founder addressing class"
-      .col-md-12
-        = image_tag 'students-3.jpg', width: "100%", alt: "Students sitting and paying attention"
+= render 'difference'
+= render 'photo'
 = render 'layouts/testimony', quote: @quote
 .programs
   .row.top
@@ -129,26 +101,6 @@
       h5.lighter Aseguramiento de Infraestructura II
       h3.highlight Defensa contra Ciberataques
       p Aprende a implementar Asset Managment, Patch Managment, Threat Intelligence, Windows Hardening, CIS Benchmarks, HIDS, OSQuery y Logs.
-
 = render 'layouts/companies'
-.financing
-  .row
-    .col-md-8
-      h2 Financiamiento
-    .col-md-4
-      p  La falta de recursos económicos no será un impedimento para cambiar tu vida. Tenemos tres maneras de financiar el inicio de tu carrera como científico de datos: <b>Acuerdo de Ingreso Compartido</b>, <b>Meses sin Intereses</b> o <b>Pago de Contado</b>.
-  .hr
-  .row
-    .col-md-4.center
-      i.far.fa-handshake-alt.fa-3x
-      h3.bold Ingreso Compartido
-      p Comienza a pagar el programa hasta que tengas un sueldo de 16 mil pesos mensual. Después de eso, paga 15 por ciento de tu sueldo por 18 meses. Así nosotros compartimos el riesgo contigo.
-    .col-md-4.center
-      i.far.fa-credit-card.fa-3x
-      h3.bold Meses sin Intereses
-      p Si buscas una opción de financiamiento tradicional, puedes cubrir el monto de tu colegiatura en hasta 18 mensualidades sin intereses de 2 mil 499 pesos al mes mediante debitación automática.
-    .col-md-4.center
-      i.far.fa-money-check-edit-alt.fa-3x
-      h3.bold Pago de Contado
-      p El monto completo de la colegiatura del programa es de 44 mil 990 pesos, pero si pagas de contado, recibe un descuento de 5 mil pesos sobre el monto total de la colegiatura y paga sólo 39 mil 990 pesos.
+= render 'financing'
 = render 'layouts/instructors'
