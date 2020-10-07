@@ -40,6 +40,10 @@
     img
       margin-bottom: 40px
 
+    h1
+      color: $color-blue
+      opacity: 0.9
+
     h3
       margin-top: 40px
       margin-bottom: 40px
@@ -58,8 +62,9 @@
     .col
       padding: 50px 10%
       width: 100%
-      background: url(asset_path('nasa.jpg')) no-repeat
+      background: url(asset_path('hero.jpg')) no-repeat
       background-position: 50% 0%
+      background-size: cover
       min-height: 500px
       color: white
 
@@ -230,10 +235,14 @@
 
 @include media-breakpoint-up(xl)
   .leader
-    background-color: black
+    background-color: #0C2340
 
     img
       margin-bottom: 30px
+
+    h1
+      color: $color-blue
+      opacity: 0.9
 
     h3
       margin-top: 20px
@@ -251,9 +260,10 @@
     .col
       padding: 125px 10%
       width: 100%
-      background: url(asset_path('nasa.jpg')) no-repeat
+      background: url(asset_path('hero.jpg')) no-repeat
       clip-path: polygon(0 0, 80% 0, 60% 100%, 0% 100%)
       background-position: 0% 0%
+      background-size: cover
       min-height: 750px
       color: white
 
