@@ -1,13 +1,4 @@
-.leader
-  .row
-    .col
-      = link_to root_path do
-        = image_tag 'cerouno-logo-horizontal.png', width: "200", alt: "CeroUno Logo"
-      h4
-        span.mastery Mastery Program
-      h1 Data Science
-      h3.description Aprende a modelar y estructurar datos,<br> desarrollar modelos estadísticos, utilizar<br> machine learning y crear visualizaciones<br> para guiar a las organizaciones al futuro.
-      = link_to 'APLICA AHORA', 'https://cerouno.typeform.com/to/OhB7O5', class: 'btn btn-lg btn-primary'
+= render 'leader', program: @program
 = render 'difference'
 = render 'photo'
 = render 'layouts/testimony', quote: @quote

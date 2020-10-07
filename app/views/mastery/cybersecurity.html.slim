@@ -1,13 +1,4 @@
-.leader
-  .row
-    .col
-      = link_to root_path do
-        = image_tag 'cerouno-logo-horizontal.png', width: "200", alt: "CeroUno Logo"
-      h4
-        span.mastery Mastery Program
-      h1 Cybersecurity
-      h3.description Aprende a evaluar vulnerabilidades,<br> hackeo ético, ingeniería social, seguridad en la nube<br> y gestión de políticas de ciberseguridad<br> para proteger a las organizaciones de ciberataques.
-      = link_to 'APLICA AHORA', 'https://cerouno.typeform.com/to/OhB7O5', class: 'btn btn-lg btn-primary'
+= render 'leader', program: @program
 = render 'difference'
 = render 'photo'
 = render 'layouts/testimony', quote: @quote

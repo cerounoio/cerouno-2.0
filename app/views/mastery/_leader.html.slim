@@ -1,0 +1,11 @@
+.leader
+  .row
+    .col-md-6.col-left
+      = link_to root_path do
+        = image_tag 'cerouno-logo-horizontal.png', width: "200", alt: "CeroUno Logo"
+      h4
+        span.mastery Mastery Program
+      h1= program.name
+      h3.description= program.description
+      = link_to 'APLICA AHORA', 'https://cerouno.typeform.com/to/OhB7O5', class: 'btn btn-lg btn-primary'
+    .col-md-6.col-right
